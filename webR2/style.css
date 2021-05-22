@@ -1,0 +1,54 @@
+/*---------------------------------\
+                GENERAL            
+\----------------------------------*/
+
+table,th,td {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: rgb(209, 209, 209);
+}
+
+tbody>tr:nth-child(even) {
+    background-color: rgb(230, 230, 231);
+}
+
+tbody>tr>td {
+    text-indent: 5px;
+}
+
+/*---------------------------------\
+            Container Table          
+\----------------------------------*/
+
+.container-table {
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.table-sizing {
+    width: 100%;
+    min-height: .01%;
+    overflow-y: hidden;
+}
+
+/*---------------------------------\
+        Break Point Desktop        
+\----------------------------------*/
+
+@media(min-width: 1025px) {
+    .container-table {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .table-sizing>thead>tr>th {
+        white-space: nowrap;
+    }
+
+    .table-sizing>tbody>tr>td {
+        white-space: nowrap;
+    }
+}
